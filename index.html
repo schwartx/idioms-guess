@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Higher or Lower Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="page-1" class="page">
+    <h1>Guess the idiom</h1>
+    <button data-limit="3">EASY</button>
+    <button data-limit="2">NORMAL</button>
+    <button data-limit="1">HARD</button>
+</div>
+
+<div id="page-2" class="page">
+    <p class="used">Used:   <br><span></span></p>
+    <p class="tries">Tries: <span>0</span></p>
+    <h2>Guess:<br><span></span></h2>
+    <p class="response"></p>
+    <label>
+        <input type="text" class="input" name="input">
+    </label>
+    <button>Try</button>
+</div>
+
+<div id="page-3" class="page">
+    <h2>CONGRATULATIONS!<br><span>YOU HAVE FINISHED THE GAME!</span></h2>
+    <p>your score is <span>0</span></p>
+    <p class="tip">Not bad... but can you beat that?</p>
+    <br>
+    <button onclick="console.log(window.location); window.location.href = window.location;">Play Again</button>
+</div>
+<!-- partial -->
+<script src="./renderer.js"></script>
+
+</body>
+</html>
